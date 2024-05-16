@@ -13,8 +13,8 @@ jobs:
             contents: read
             packages: write
         steps:
-            - name: Checkout repository
-              uses: actions/chekout@v3
+            - name: Checkout code
+              uses: actions/checkout@v2
 
             - name: Log in to the Container registry
               uses: docker/login-action@v3
