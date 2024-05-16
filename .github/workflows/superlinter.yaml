@@ -2,6 +2,10 @@ name: Super-Linter
 
 on: push
 
+env:
+    REGISTRY: ghcr.io
+    IMAGE_NAME: ${{ github.repository }}
+
 jobs:
     super-lint:
       name: Lint code base
